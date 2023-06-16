@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="mt-4">
+    <h3>Add New Toy</h3>
+    <form method="post" action="/toys/store">
+      <!-- Toy ID input -->
+      <div class="form-outline mb-4">
+        <label class="toyID">Toy ID</label>
+        <input type="text" id="toyID" name="toyID" class="form-control" placeholder="Toy ID" />
+      </div>
+
+      <!-- Category ID input -->
+      <div class="form-outline mb-4">
+        <label class="categoryID">Category ID</label>
+        <input type="text" id="categoryID" name="categoryID" class="form-control" placeholder="Category ID" />
+      </div>
+
+      <!-- Toy Name input -->
+      <div class="form-outline mb-4">
+        <label class="toyName">Toy Name</label>
+        <input type="text" id="toyName" name="toyName" class="form-control" placeholder="Toy Name" />
+      </div>
+
+      <!-- Toy Price input -->
+      <div class="form-outline mb-4">
+        <label class="toyPrice">Toy Price</label>
+        <input type="text" id="toyPrice" name="toyPrice" class="form-control" placeholder="Toy Price" />
+      </div>
+
+      <!-- Toy Image input -->
+      <div class="form-outline mb-4">
+        <label class="toyImage">Image Link</label>
+        <input type="url" id="toyImage" name="toyImage" class="form-control" placeholder="Image Link" />
+      </div>
+
+      <!-- Toy Description input -->
+      <div class="form-outline mb-4">
+        <label class="toyDescription">Toy Description</label>
+        <input type="text" id="toyDescription" name="toyDescription" class="form-control"
+          placeholder="Toy Description" />
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-secondary btn-block">Submit</button>
+    </form>
+  </div>
+</div>

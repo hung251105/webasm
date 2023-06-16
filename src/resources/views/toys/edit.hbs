@@ -1,0 +1,51 @@
+<div class="container">
+  <h3 class="text-center my-4 py-2">Update product: {{toy.toyID}}</h3>
+  <div class="row gx-4 gx-lg-5 align-items-center">
+    <div class="col-md-6">
+      <img class="card-img-top mb-5 mb-md-0" src="{{toy.toyImage}}" alt="{{toy.toyName}} image">
+    </div>
+    <div class="col-md-6">
+      <form class="mt-4" method="post" action="/toys/{{toy.toyID}}?_method=PUT">
+        <!-- Toy ID input -->
+        <div class="form-outline mb-4">
+          <label class="toyID">Toy ID</label>
+          <textarea id="toyID" name="toyID" class="form-control">{{toy.toyID}}</textarea>
+        </div>
+
+        <!-- Category ID input -->
+        <div class="form-outline mb-4">
+          <label class="categoryID">Category ID</label>
+          <textarea id="categoryID" name="categoryID" class="form-control">{{toy.categoryID}}</textarea>
+        </div>
+
+        <!-- Toy Name input -->
+        <div class="form-outline mb-4">
+          <label class="toyName">Toy Name</label>
+          <textarea id="toyName" name="toyName" class="form-control">{{toy.toyName}}</textarea>
+        </div>
+
+        <!-- Toy Price input -->
+        <div class="form-outline mb-4">
+          <label class="toyPrice">Toy Price</label>
+          <textarea id="toyPrice" name="toyPrice" class="form-control">{{toy.toyPrice}}</textarea>
+        </div>
+
+        <!-- Toy Image input -->
+        <div class="form-outline mb-4">
+          <label class="toyImage">Image Link</label>
+          <textarea id="toyImage" name="toyImage" class="form-control">{{toy.toyImage}}</textarea>
+        </div>
+
+        <!-- Toy Description input -->
+        <div class="form-outline mb-4">
+          <label class="toyDescription">Toy Description</label>
+          <textarea id="toyDescription" rows="5" name="toyDescription"
+            class="form-control">{{toy.toyDescription}}</textarea>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-secondary btn-block">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,162 @@
+[{
+  "_id": {
+    "$oid": "63ff8a5fb2b9f8b6e9fab81c"
+  },
+  "toyID": {
+    "$numberLong": "1677691487040"
+  },
+  "categoryID": 1,
+  "toyName": "Batman Action Figure",
+  "toyPrice": 19.99,
+  "toyImage": "https://bbts1.azureedge.net/images/p/full/2021/10/311ce6ad-0849-46e2-9e72-93ca899d194d.jpg",
+  "toyDescription": "Batman Action Figure toys are highly detailed collectibles that allow fans to display their love for the Dark Knight. With various sizes and designs available, these toys bring the iconic character to life and are perfect for both play and display.",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1677691487053"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1677691487053"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ff8a8bb2b9f8b6e9fab821"
+  },
+  "toyID": {
+    "$numberLong": "1677691531028"
+  },
+  "categoryID": 2,
+  "toyName": "Annabelle Doll",
+  "toyPrice": 14.99,
+  "toyImage": "https://www.1999.co.jp/itbig71/10712859.jpg",
+  "toyDescription": "Annabelle dolls are popular toys for children, especially girls, that have been around since 1959. They are known for their iconic fashion sense, diverse range of dolls, and accessories that encourage imaginative play.",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1677691531031"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1677691531031"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ff8aaab2b9f8b6e9fab824"
+  },
+  "toyID": {
+    "$numberLong": "1677691562502"
+  },
+  "categoryID": 1,
+  "toyName": "Hot Wheels Car",
+  "toyPrice": 3.99,
+  "toyImage": "https://u6wdnj9wggobj.vcdn.cloud/media/catalog/product/cache/a237138a07ed0dd2cc8a6fa440635ea6/g/r/gry79_c_21_001.jpg",
+  "toyDescription": "Hot Wheels is a popular brand of die-cast toy cars that has been around since 1968. Known for their high-quality and detailed designs, Hot Wheels cars have become a beloved collector's item for car enthusiasts of all ages.",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1677691562504"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1677691562504"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ff8ae5b2b9f8b6e9fab827"
+  },
+  "toyID": {
+    "$numberLong": "1677691621728"
+  },
+  "categoryID": 3,
+  "toyName": "iPad Pro M2",
+  "toyPrice": 1000,
+  "toyImage": "https://product.hstatic.net/200000348419/product/ipad_pro_12_9_inch_m2_2022_wifi_1ea0d5fa090041beb8d09e52c7f6da3d_master.png",
+  "toyDescription": "Apple has launched the new iPad Pro featuring M2 chip, high-speed connectivity, advanced display, cameras, Face ID, Thunderbolt, four-speaker system, and iPadOS 16. The device boasts advanced hardware and powerful pro apps, enhancing the pro workflows on iPad.",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1677691621730"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1677740428943"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ff8b2cb2b9f8b6e9fab82d"
+  },
+  "toyID": {
+    "$numberLong": "1677691692206"
+  },
+  "categoryID": 3,
+  "toyName": "Macbook Pro M1",
+  "toyPrice": 2100,
+  "toyImage": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-spacegray-select-202301?wid=2000&hei=1222&fmt=jpeg&qlt=95&.v=1671304673202",
+  "toyDescription": "M2 Pro and M2 Max offer powerful performance, with up to 12-core CPU and next-gen Neural Engine for pro workflows, while up to 19-core GPU boosts graphics performance for work and play.",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1677691692207"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1677740317088"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ff8bd4b2b9f8b6e9fab832"
+  },
+  "toyID": {
+    "$numberLong": "1677691860023"
+  },
+  "categoryID": 3,
+  "toyName": "iMac",
+  "toyPrice": 1700,
+  "toyImage": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/imac-24-silver-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479510000",
+  "toyDescription": "The iMac with M1 chip and macOS Ventura delivers outstanding performance, speed, and efficiency, with up to 85% faster CPU and two times faster graphics performance. It also offers a quiet and cool user experience.",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1677691860025"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1677739422668"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "640040b355aaecb880d0d687"
+  },
+  "toyID": {
+    "$numberLong": "1677738163577"
+  },
+  "categoryID": 3,
+  "toyName": "Apple Watch",
+  "toyPrice": 800,
+  "toyImage": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MP8D3ref_VW_34FR+watch-41-stainless-silver-cell-8s_VW_34FR_WF_CO?wid=700&hei=700&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660781108697%2C1661890809922",
+  "toyDescription": "The stainless steel case is durable and polished to a shiny, mirror-like finish.  The Modern Buckle is made from supple Granada leather with a stretch-resistant inner layer and has a two-piece magnetic closure that’s delightfully simple to secure.",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1677738163582"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1677738163582"
+    }
+  },
+  "__v": 0
+}]

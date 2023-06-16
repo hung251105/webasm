@@ -1,0 +1,77 @@
+<div class="mt-4">
+  <div class="container">
+    <h3>Products</h3>
+    <table class="table mt-4">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Image</th>
+          <th scope="col">Price</th>
+          <th scope="col">Description</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each toys}}
+        <tr>
+          <th>{{this.toyID}}</th>
+          <td>{{this.toyName}}</td>
+          <td><img class="card-img-top" src="{{this.toyImage}}" alt="{{this.toyName}} image">
+          </td>
+          <td>${{this.toyPrice}}</td>
+          <td style="text-align: justify;">{{this.toyDescription}}</td>
+          <td>
+            <a href="/toys/{{this.toyID}}/edit" class="btn btn-outline-dark">Edit</a>
+            <a href="/toys/{{this.toyID}}/delete" data-toggle="modal" data-target="#delete-toy-modal"
+              data-id="{{this.toyID}}" class="btn btn-outline-danger" id="btn-delete-toy">Delete</a>
+          </td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{{!-- Delete hidend form --}}
+<form name="delete-toy-form" method="post"></form>
+<!-- Modal -->
+<div class="modal fade" id="delete-toy-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Delete Product</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Do you want to delete this product?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger">Delete</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var toyID;
+    var deleteForm = document.forms['delete-toy-form'];
+    var btnDeleteToy = document.getElementById('btn-delete-toy');
+
+    $('#delete-toy-modal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget) // Button that triggered the modal
+      toyID = button.data('id') // Extract info from data-* attributes
+    });
+
+    $('#delete-toy-modal').on('click', '.btn-danger', function () {
+      deleteForm.action = '/toys/' + toyID + '/?_method=DELETE';
+      deleteForm.submit();
+    });
+
+  });
+</script>

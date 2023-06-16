@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding: 16px;">
+  <div class="container">
+    <a class="navbar-brand" href="/">ATN Store</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+      aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav ml-auto">
+        {{!-- <li class="nav-item">
+          <a class="nav-link" href="/toys/create">Create</a>
+        </li> --}}
+        {{!-- <li class="nav-item">
+          <a class="nav-link" href="/about"></a>
+        </li> --}}
+        <form class="d-flex" method="GET" action="/toys/search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="q" name="q">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img src="https://avatars.githubusercontent.com/u/94630571?v=4" alt="Admin" class="user-avatar">
+            Kiet Tuan Nguyen
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/toys/create">Add a product</a>
+            <a class="dropdown-item" href="/me/stored/toys">View all products</a>
+            <a class="dropdown-item" href="/about">About</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Coming Soon</a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
